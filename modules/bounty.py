@@ -297,13 +297,6 @@ def goToEncounter():
             if not nextlvl():
                 break
 
-    while not find_ellement(Button.back.filename, Action.screenshot):
-        waitForItOrPass(UIElement.campfire, 5)
-        look_at_campfire_completed_tasks()
-        move_mouse_and_click(windowMP(), windowMP()[2] / 2, windowMP()[3] / 1.25)
-        time.sleep(2)
-
-
 def travelToLevel(page="next"):
     """
     Go to a Travel Point, choose a level/bounty and go on the road to make encounter
